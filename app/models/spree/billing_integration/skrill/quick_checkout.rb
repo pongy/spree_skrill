@@ -12,6 +12,10 @@ module Spree
       ActiveMerchant::Billing::Skrill
     end
 
+    def purchase(money, source, options={})
+
+    end
+
     def redirect_url(order, opts = {})
       opts.merge! self.preferences
 
