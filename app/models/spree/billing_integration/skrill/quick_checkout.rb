@@ -13,11 +13,11 @@ module Spree
     end
 
     def purchase(money, source, options={})
-      'complete'
+      ActiveMerchant::Billing::Response.new(true, :message =>'Skrill: success', :test => true)
     end
 
     def authorize(money, source, options={})
-      'complete'
+      ActiveMerchant::Billing::Response.new(true, :message =>'Skrill: success', :test => true)
     end
 
     def redirect_url(order, opts = {})
