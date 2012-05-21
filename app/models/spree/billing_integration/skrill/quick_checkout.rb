@@ -16,6 +16,10 @@ module Spree
 
     end
 
+    def success?
+
+    end
+
     def redirect_url(order, opts = {})
       opts.merge! self.preferences
 
