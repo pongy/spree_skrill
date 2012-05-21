@@ -13,11 +13,11 @@ module Spree
     end
 
     def purchase(money, source, options={})
-
+      true
     end
 
-    def success?
-
+    def authorize(money, source, options={})
+      true
     end
 
     def redirect_url(order, opts = {})

@@ -31,6 +31,11 @@ module Spree
     end
 
     private
+
+    def success?
+      true
+    end
+
     def confirm_skrill
       return unless (params[:state] == "payment") && params[:order][:payments_attributes]
 
