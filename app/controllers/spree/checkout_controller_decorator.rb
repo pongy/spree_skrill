@@ -15,6 +15,8 @@ module Spree
         payment.pend!
       end
 
+      puts "PARAMS INSPECT======#{params.inspect}"
+
       until @order.state == "complete"
         if @order.next!
           @order.update!
